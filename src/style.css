@@ -2,6 +2,7 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --primary-font-mobile: 20px;
 }
 .font-size-h1 {
   font-size: 96px;
@@ -13,6 +14,7 @@
   font-size: 24px;
   opacity: 0.7;
 }
+
 p {
   font-size: 18px;
   line-height: 1.5;
@@ -58,8 +60,24 @@ button {
   color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
+  margin: 0 100px 100px;
 }
 
 .email-link:hover {
   text-decoration: underline;
+}
+@media (max-width: 576px) {
+  .font-size-mobile-h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  .font-size-mobile-h2 {
+    font-size: 32px;
+  }
+  .center-text {
+    text-align: center;
+  }
+  button {
+    padding: 20px 100px;
+  }
 }
